@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SaaS Website Project</title>
+    <meta
+      name="description"
+      content=" making a software as a service website for class"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5ae0128e5f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- making a page top button -->
+    <div id="pageTop"></div>
+
+    <!-- making a home button -->
+    <div id="home"></div>
+    <!-- if you want sections to go from edge to edge, they can't be in containers with the rest of the sections that have a margin on them. -->
+    <header>
+      <div class="bg">
+        <div class="light-grey"></div>
+        <div class="grey-blue"></div>
+        <div class="white"></div>
+      </div>
+
+      <nav class="navbar container">
+        <button
+          class="navbar-toggler"
+          aria-expanded="false"
+          aria-controls="navbarDropdown"
+        >
+          <span>&#9776;</span>
+        </button>
+
+        <div class="logo-wrapper">
+          <img
+            src="./saas-project-assets/project_logo/logo.svg"
+            alt="project logo for Front"
+          />
+        </div>
+
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li>
+              <a class="active" href="#features">Features</a>
+            </li>
+            <li><a href="#learn">Learn</a></li>
+            <li>
+              <a href="#pricing">Pricing</a>
+            </li>
+            <li><a href="#hire">Hire Us</a></li>
+          </ul>
+          <a class="btn btn-primary" href="#">Buy Now</a>
+        </div>
+      </nav>
+
+      <div class="hero container">
+        <div class="message">
+          <h2>
+            Empowering <br />
+            teams with the <br />
+            freedom
+          </h2>
+          <p>Own the unlimited power of the web development</p>
+          <div class="learn-more">
+            <a class="btn btn-primary" href="#"
+              ><span
+                ><i class="fa-solid fa-circle-play"></i>
+              </span>
+              Play Video
+            </a>
+            <span><a href="#learn">Learn more</a></span>
+          </div>
+        </div>
+        <div class="logo-icons">
+          <div class="logo-grid">
+            <div class="icon-item one">
+              <img
+                src="./saas-project-assets/logo_icons/asana.png"
+                alt="asana"
+              />
+            </div>
+            <div class="icon-item two">
+              <img
+                src="./saas-project-assets/logo_icons/atlassian.png"
+                alt="atlassian"
+              />
+            </div>
+            <div class="icon-item three">
+              <img
+                src="./saas-project-assets/logo_icons/calendar.png"
+                alt="calendar"
+              />
+            </div>
+            <div class="icon-item four">
+              <img
+                src="./saas-project-assets/logo_icons/google-A.png"
+                alt="google A"
+              />
+            </div>
+            <div class="icon-item five">
+              <img
+                src="./saas-project-assets/logo_icons/google.png"
+                alt="google"
+              />
+            </div>
+            <div class="icon-item six">
+              <img
+                src="./saas-project-assets/logo_icons/paypal.jpg"
+                alt="paypal"
+              />
+            </div>
+            <div class="icon-item seven">
+              <img
+                src="./saas-project-assets/logo_icons/weave.png"
+                alt="weave"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="home-container">
+      <section id="features" class="key-benefits container">
+        <h3>Key Benefits</h3>
+        <p>
+          Design faster with a growing array of beautiful
+          templates
+        </p>
+        <!-- this will be a flex -->
+        <div class="benefit-cards">
+          <!-- these will use flex -->
+          <div class="benefit-card">
+            <div class="img-wrapper">
+              <img
+                src="./saas-project-assets/icons/responsive.svg"
+                alt="responsive"
+              />
+            </div>
+            <h4>Responsive</h4>
+            <p>
+              It is a long established fact that a reader will be
+              distracted by the readable content of a page when
+              looking at its layout.
+            </p>
+            <a href="#learn">Learn more</a>
+          </div>
+          <div class="benefit-card">
+            <div class="img-wrapper">
+              <img
+                src="./saas-project-assets/icons/customizable.svg"
+                alt="customizable"
+              />
+            </div>
+            <h4>Customizable</h4>
+            <p>
+              It is a long established fact that a reader will be
+              distracted by the readable content of a page when
+              looking at its layout.
+            </p>
+            <a href="#learn">Learn more</a>
+          </div>
+          <div class="benefit-card">
+            <div class="img-wrapper">
+              <img
+                src="./saas-project-assets/icons/premium.svg"
+                alt="premium"
+              />
+            </div>
+            <h4>
+              Premium
+              <span class="btn-green">sketch</span>
+            </h4>
+
+            <p>
+              It is a long established fact that a reader will be
+              distracted by the readable content of a page when
+              looking at its layout.
+            </p>
+            <a href="#learn">Learn more</a>
+          </div>
+          <div class="benefit-card">
+            <div class="img-wrapper">
+              <img
+                src="./saas-project-assets/icons/documentation.svg"
+                alt="documentation"
+              />
+            </div>
+            <h4>Documentation</h4>
+            <p>
+              It is a long established fact that a reader will be
+              distracted by the readable content of a page when
+              looking at its layout.
+            </p>
+            <a href="#learn">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="learn" class="banner-one">
+        <div class="container">
+          <div class="left">
+            <h3>
+              Front makes you look at things from a different
+              prospective
+            </h3>
+            <a href="#" class="btn btn-primary">
+              <span
+                ><i class="fa-solid fa-circle-play"></i
+              ></span>
+              Play Video
+            </a>
+          </div>
+          <div class="right">
+            <img
+              src="./saas-project-assets/banners/banner_one.jpg"
+              alt="banner one"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-two">
+        <h3>Why front?</h3>
+        <p>
+          Front is an incredibly beautiful, fully responsive, and
+          mobile-first projects on
+          <br />
+          the web - it is the starting point for creative sites
+        </p>
+
+        <!-- the circles -->
+
+        <div class="circles-container">
+          <!-- <div class="info-circle"> -->
+
+          <div class="item">
+            <div class="circle">
+              <div class="small-circle"></div>
+              <!-- <h5>Basic elements</h5> -->
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <div class="divider"></div>
+          <div class="item">
+            <div class="circle">
+              <div class="small-circle"></div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="item">
+            <div class="circle">
+              <div class="small-circle"></div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="item">
+            <div class="circle">
+              <div class="small-circle"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-banner">
+          <img
+            src="./saas-project-assets/banners/banner_two.jpg"
+            alt="banner two"
+          />
+        </div>
+
+        <div class="container">
+          <span
+            ><i
+              class="fa-solid fa-circle-play btn-play-white"
+            ></i
+          ></span>
+        </div>
+      </section>
+
+      <section class="hubspot">
+        <div class="container">
+          <div class="images">
+            <div class="dots">
+              <img
+                src="./saas-project-assets/abstract/dots.svg"
+                alt="dots"
+              />
+            </div>
+            <div class="girl">
+              <img
+                src="./saas-project-assets/people/woman_three.jpg"
+                alt="woman three"
+              />
+            </div>
+          </div>
+          <div class="person-info">
+            <div class="img-wrapper">
+              <img
+                src="./saas-project-assets/company_logos/hubspot.svg"
+                alt="hubspot"
+              />
+            </div>
+            <p>
+              The template is really nice and offers quite a
+              large set of options. It's beautiful and the coding
+              is done quickly and seamlessly. Thank you!
+            </p>
+            <div class="woman-three">
+              <h4>Christina Kray</h4>
+              <p>Executive Director</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="companies">
+        <div class="container">
+          <h4>TRUSTED BY WORLD'S BEST</h4>
+          <div class="company-logos">
+            <div class="company-logo">
+              <img
+                src="./saas-project-assets/company_logos/weebly.svg"
+                alt="weebly"
+              />
+            </div>
+            <div class="company-logo">
+              <img
+                src="./saas-project-assets/company_logos/uber.svg"
+                alt="uber"
+              />
+            </div>
+            <div class="company-logo">
+              <img
+                src="./saas-project-assets/company_logos/slack.svg"
+                alt="slack"
+              />
+            </div>
+            <div class="company-logo">
+              <img
+                src="./saas-project-assets/company_logos/airbnb.svg"
+                alt="airbnb"
+              />
+            </div>
+            <div class="company-logo">
+              <img
+                src="./saas-project-assets/company_logos/spotify.svg"
+                alt="spotify"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="pricing">
+        <h3>Pricing</h3>
+        <p>No additional costs. Pay for what you use</p>
+
+        <div class="bottom">
+          <div class="price-card benefit-card">
+            <h4>59<span>/mo</span></h4>
+            <hr />
+            <p>
+              Start your Front business now. 100% guaranteed
+              money back. No questions asked.
+            </p>
+            <div>
+              <div class="button">
+                <a href="#" class="btn btn-primary">
+                  <span
+                    ><i
+                      class="fa-solid fa-circle-play"
+                    ></i></span
+                  >Play Video</a
+                >
+                <p>No credit card required</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-container">
+            <div class="pricing-grid">
+              <div class="grid-item">
+                <div class="img-wrapper">
+                  <img
+                    src="./saas-project-assets/icons/components.svg"
+                    alt="components"
+                  />
+                </div>
+                <h4>Hundreds of components</h4>
+                <p>
+                  Achieve maximum productivity with minimum
+                  effort with Front and create robust Limitless
+                  products.
+                </p>
+              </div>
+              <div class="grid-item">
+                <div class="img-wrapper">
+                  <img
+                    src="./saas-project-assets/icons/images.svg"
+                    alt="images"
+                  />
+                </div>
+                <h4>Images included</h4>
+                <p>
+                  Images included We made custom license for all
+                  our premium images in the front
+                </p>
+              </div>
+              <div class="grid-item">
+                <div class="img-wrapper">
+                  <img
+                    src="./saas-project-assets/icons/cancel.svg"
+                    alt="cancel"
+                  />
+                </div>
+                <h4>
+                  Cancel anytime
+                  <span class="btn-green">sketch</span>
+                </h4>
+                <p>
+                  If its not for you, just cancel, no hidden cost
+                  or fees.
+                </p>
+              </div>
+              <div class="grid-item">
+                <div class="img-wrapper">
+                  <img
+                    src="./saas-project-assets/icons/moneyback.svg"
+                    alt="money back"
+                  />
+                </div>
+                <h4>Money back</h4>
+                <p>
+                  100% guaranteed money back. No questions asked.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <!-- Hire -->
+      <section id="hire" class="hire">
+        <div class="hire-us">
+          <div class="hire-one">
+            <h3>Hire Us</h3>
+            <p class="break">
+              Whatever your goal - <br />
+              we will get you there
+            </p>
+            <div class="line"></div>
+            <p>
+              <i
+                >"I love front! I love the ease of use, I love
+                the <br />
+                fact that I have total creative freedom..."</i
+              >
+            </p>
+          </div>
+          <div class="hire-two">
+            <h5>Charlotte Moore</h5>
+            <p>Head of Commercials, Stack</p>
+            <div class="people">
+              <div class="person">
+                <img
+                  src="./saas-project-assets/people/woman_two.jpg"
+                  alt="woman two"
+                />
+              </div>
+              <div class="person">
+                <img
+                  src="./saas-project-assets/people/woman_one.jpg"
+                  alt="woman two"
+                />
+              </div>
+              <div class="person big">
+                <img
+                  src="./saas-project-assets/people/man_one.jpg"
+                  alt="woman two"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-container">
+          <form>
+            <div class="form-item">
+              <h5>
+                Fill out the form and we'll be in touch as soon
+                as possible
+              </h5>
+            </div>
+
+            <div class="form-item">
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="First name"
+              />
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last name"
+              />
+            </div>
+            <div class="form-item">
+              <input
+                type="text"
+                name="secondFirstName"
+                id="secondFirstName"
+                placeholder="First name"
+              />
+              <input
+                type="text"
+                name="secondLastName"
+                id="secondLastName"
+                placeholder="Last name"
+              />
+            </div>
+            <div class="form-item">
+              <select name="budget" id="budget">
+                <option>Budget</option>
+              </select>
+              <select name="country" id="country">
+                <option>Country</option>
+              </select>
+            </div>
+            <div class="form-item">
+              <textarea
+                name="projectNeeds"
+                id="projectNeeds"
+                placeholder="Tell us more about your project, needs, and timeline, please..."
+                rows="8"
+              ></textarea>
+            </div>
+            <div class="form-item">
+              <input
+                type="checkbox"
+                name="marketing"
+                id="marketing"
+              />
+              <label for="marketing">
+                Yes, I'd like to recieve occasional marketing
+                emails from Front. I have the right to opt out at
+                any time.</label
+              >
+            </div>
+            <div class="form-item">
+              <span>
+                <a href="#">View privacy policy</a>
+              </span>
+              <span>
+                <a class="active" href="#"
+                  >View privacy policy</a
+                >
+              </span>
+            </div>
+            <a class="btn btn-primary" href="#">Get Started</a>
+          </form>
+        </div>
+      </section>
+
+      <section class="footer home-container">
+        <div class="top">
+          <div class="brand">
+            <div class="logo-wrapper">
+              <img
+                src="./saas-project-assets/project_logo/logo.svg"
+                alt="front logo"
+              />
+            </div>
+            <ul>
+              <li>
+                <p>
+                  <span
+                    ><i class="fa-solid fa-location-arrow"></i
+                  ></span>
+                  <a href="#"
+                    >153 Williamson Plaza, Maggieberg
+                  </a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><i class="fa-solid fa-phone"></i></span>
+                  <a class="active" href="#">
+                    +1 (062) 109 - 9222</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="information">
+            <div class="company-info">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li>
+                  <a href="#">
+                    Career
+                    <span class="btn-small-primary"
+                      >We're Hiring</span
+                    ></a
+                  >
+                </li>
+                <li><a href="#">Blog </a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Hire Us</a></li>
+              </ul>
+            </div>
+            <div class="features-info">
+              <h4>Features</h4>
+              <ul>
+                <li><a href="#">Press</a></li>
+                <li>
+                  <a class="active" href="#">Release notes</a>
+                </li>
+                <li>
+                  <a href="#">Integrations</a>
+                </li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="documentation-info">
+              <h4>Documentation</h4>
+              <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Status</a></li>
+                <li>
+                  <a href="#">Api Reference</a>
+                </li>
+                <li>
+                  <a href="#">Tech Requirements</a>
+                </li>
+              </ul>
+            </div>
+            <div class="resources-info">
+              <h4>Resources</h4>
+              <ul>
+                <li>
+                  <span
+                    ><i class="fa-solid fa-circle-info"></i
+                  ></span>
+                  <a href="#"> Help</a>
+                </li>
+                <li>
+                  <span
+                    ><i class="fa-solid fa-circle-user"></i
+                  ></span>
+                  <a href="#"> Your Account</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="hr"></div>
+          <div class="footer-nav">
+            <div class="footer-left">
+              <span>
+                <a href="#">Privacy & Policy</a>
+                >
+                <a class="active" href="#">Terms</a>
+                >
+                <a href="#">Site Map</a>
+              </span>
+            </div>
+            <div class="footer-right">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span
+                      ><i
+                        class="fa-brands fa-facebook-f"
+                      ></i></span
+                  ></a>
+                </li>
+                <li class="active-social">
+                  <a href="#"
+                    ><span
+                      ><i class="fa-brands fa-google"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      ><i class="fa-brands fa-twitter"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      ><i class="fa-brands fa-github"></i></span
+                  ></a>
+                </li>
+                <!-- <li>
+                 
+                </li> -->
+              </ul>
+              <select name="country" id="country">
+                <option value="unitedStates">
+                  <!-- why wont the flag show up? -->
+                  <span
+                    ><i
+                      class="fa-regular fa-copyright"
+                    ></i></span
+                  >United States
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>
+              <span
+                ><i class="fa-regular fa-copyright"></i
+              ></span>
+              Front. 2022 Responsive designs. All rights
+              reserved.
+            </p>
+            <p>
+              When you visit or interact with our sites, services
+              or tools, we or our authorized service providers
+              may use cookies for storing information to help
+              provide you with a better, faster and safer
+              experience and for marketing purposes.
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <a href="#pageTop" id="scrollUp">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- <script src="" async defer></script> -->
+    <script>
+      //this will toggle the nav button open and closed
+      const navButton = document.querySelector(
+        "button[aria-expanded]"
+      );
+
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" ||
+          false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+      navButton.addEventListener("click", toggleNav);
+    </script>
+  </body>
+</html>

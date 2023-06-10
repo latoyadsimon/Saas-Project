@@ -1,0 +1,35 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+/* this will be to play around with figuring out image wrapper sizes */
+
+main {
+  width: 900px;
+}
+
+img {
+  /* helps fit images in their container and scale in responsive sites*/
+  width: 100%;
+  /* this will handle edge case scenarios if the width is trying to exceed 100% */
+  max-width: 100%;
+  /* height: 100%; */
+  vertical-align: middle;
+  border-style: none;
+}
+
+.icon-item {
+  width: 168px;
+  height: 168px;
+  overflow: hidden;
+  /* object-fit: cover; */
+  border-radius: 50%;
+  border: 5px dashed brown;
+  background-color: var(--white);
+  box-shadow: 0 0 30px rgba(48, 63, 100, 0.5);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}

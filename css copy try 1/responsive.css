@@ -1,0 +1,215 @@
+/* media queries need to go in order from smallest to largest */
+/* remember cascading style sheets go from top to bottom, so when working with max-width, you want the bigger sizes on top and the small widths on bottom */
+
+/* reference from codeRad default.css */
+
+/* standard tablet size */
+/* @media (min-width: 768px) {
+  .pricing-table,
+  .testimonial-grid,
+  .footer-bottom-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+} */
+
+/* reference from responsive.css in codeRad */
+
+/* ipads and tablets - portrait mode, 768px is a common breakpoint*/
+/* we are doing media screen, the shorthand that is just media, will include everything: print and screen */
+
+/* @media screen and (max-width: 768px) { */
+/* we now want to display the  navbar dropdown */
+/* toggling the dropdown menu for the nav */
+/* [aria-controls="navbarDropdown"] {
+    display: block;
+  } */
+
+/* this will take the entire unordered list and hide it */
+/* [aria-expanded="false"] ~ ul {
+    display: none;
+  } */
+
+/* going to need to write a little js to make this work */
+/* [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: var(--size-50);
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.7)
+    );
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: var(--size-20);
+    color: var(--font-color-dark);
+  }
+
+  footer .footer-col:nth-child(3) {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-wrapper {
+    text-align: center;
+  }
+
+  .why-me-wrapper {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .why-me-wrapper .block-text {
+    padding-right: 0;
+  }
+
+  .why-me-wrapper > div {
+    flex: initial;
+  }
+
+  footer .footer-col:nth-child(3) {
+    grid-column: initial;
+  }
+
+  footer .footer-col:nth-child(1) {
+    order: 3;
+  }
+} */
+
+/* @media screen and (min-width: 360px) {
+  body {
+    background-color: rgb(157, 165, 42);
+    max-width: 767px;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: rgb(77, 165, 42);
+    min-width: 768px;
+  }
+
+  header {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  header .bg {
+    height: 600px;
+    width: 100%;
+    /* width: 1495px; */
+    /* rotate: 90deg; */
+    /* position: absolute; */
+    /* right: -4px; */
+    /* bottom: -213px; */
+    overflow: hidden;
+    border: 2px dashed green;
+    z-index: 1;
+    opacity: 36%;
+    top: 0px;
+  }
+
+  .light-grey {
+    background-color: #dfddef;
+    /* width: 1235px;
+    height: 1323px; */
+    rotate: 107deg;
+    z-index: 4;
+    position: absolute;
+    left: -678px;
+    top: -506px;
+  }
+
+  .grey-blue {
+    background-color: #c6c3df;
+    width: 1400px;
+    height: 1400px;
+    position: relative;
+    z-index: 3;
+    right: -114px;
+  }
+
+  .white {
+    position: absolute;
+    top: 311px;
+    /* height: 400px;
+  width: 100%; */
+    height: 100%;
+    width: 2200px;
+    z-index: 4;
+    background-color: var(--white);
+    rotate: 350deg;
+    /* right: -10px; */
+  }
+
+  .navbar {
+    padding-bottom: 20px;
+    padding-top: 250px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .message {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .message h2 {
+    font-size: 2rem;
+  }
+
+  .message p {
+    font-size: 14px;
+  }
+
+  .logo-icons {
+    padding: 80px 0px;
+    width: 400px;
+  }
+}
+
+/* @media screen and (min-width: 1024px) {
+  body {
+    background-color: brown;
+    max-width: 2560px;
+  }
+
+  header {
+    flex-direction: row;
+  }
+} */
+
+/* --------------- */
+/* @media screen and (max-width: 768px) {
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+} */
