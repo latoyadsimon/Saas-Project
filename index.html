@@ -48,7 +48,8 @@
         <div class="white"></div>
       </div>
 
-      <nav class="navbar container">
+      <nav id="topNav" class="navbar container">
+        <!-- <div class=""> -->
         <button
           class="navbar-toggler"
           aria-expanded="false"
@@ -64,20 +65,19 @@
           />
         </div>
 
-        <div class="nav-links">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li>
-              <a class="active" href="#features">Features</a>
-            </li>
-            <li><a href="#learn">Learn</a></li>
-            <li>
-              <a href="#pricing">Pricing</a>
-            </li>
-            <li><a href="#hire">Hire Us</a></li>
-          </ul>
+        <ul class="navbar-nav nav-links">
+          <li><a href="#home">Home</a></li>
+          <li>
+            <a class="active" href="#features">Features</a>
+          </li>
+          <li><a href="#learn">Learn</a></li>
+          <li>
+            <a href="#pricing">Pricing</a>
+          </li>
+          <li><a href="#hire">Hire Us</a></li>
+
           <a class="btn btn-primary" href="#">Buy Now</a>
-        </div>
+        </ul>
       </nav>
 
       <div class="hero container">
@@ -259,50 +259,66 @@
         <!-- the circles -->
 
         <div class="circles-container">
-          <!-- <div class="info-circle"> -->
+          <div class="the-circles">
+            <div class="item">
+              <div class="circle">
+                <div class="small-circle"></div>
+              </div>
+            </div>
 
-          <div class="item">
-            <div class="circle">
-              <div class="small-circle"></div>
-              <!-- <h5>Basic elements</h5> -->
-            </div>
-          </div>
-          <!-- </div> -->
+            <div class="divider"></div>
 
-          <div class="divider"></div>
-          <div class="item">
-            <div class="circle">
-              <div class="small-circle"></div>
+            <div class="item">
+              <div class="circle">
+                <div class="small-circle"></div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="item">
+              <div class="circle">
+                <div class="small-circle"></div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="item">
+              <div class="circle">
+                <div class="small-circle"></div>
+              </div>
             </div>
           </div>
-          <div class="divider"></div>
-          <div class="item">
-            <div class="circle">
-              <div class="small-circle"></div>
-            </div>
-          </div>
-          <div class="divider"></div>
-          <div class="item">
-            <div class="circle">
-              <div class="small-circle"></div>
-            </div>
+
+          <div class="circles-information">
+            <div><h5>Basic elements</h5></div>
+            <div><h5>Components</h5></div>
+            <div><h5>Combined components</h5></div>
+            <div><h5>Page layouts</h5></div>
           </div>
         </div>
 
         <div class="video-banner">
-          <img
-            src="./saas-project-assets/banners/banner_two.jpg"
-            alt="banner two"
-          />
+          <div class="video-wrapper">
+            <!-- for some reason the button looks different, it needs to be refreshed to once after loading for my changes to take effect. Why is that? -->
+            <div class="plybtn">
+              <span
+                ><i
+                  class="fa-solid fa-circle-play btn-play-white"
+                ></i
+              ></span>
+            </div>
+            <img
+              src="./saas-project-assets/banners/banner_two.jpg"
+              alt="banner two"
+            />
+          </div>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
           <span
             ><i
               class="fa-solid fa-circle-play btn-play-white"
             ></i
           ></span>
-        </div>
+        </div> -->
       </section>
 
       <section class="hubspot">
@@ -731,7 +747,7 @@
                 </li> -->
               </ul>
               <select name="country" id="country">
-                <option value="unitedStates">
+                <option value="usa">
                   <!-- why wont the flag show up? -->
                   <span
                     ><i
@@ -739,6 +755,9 @@
                     ></i></span
                   >United States
                 </option>
+
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
               </select>
             </div>
           </div>
@@ -768,6 +787,15 @@
 
     <!-- <script src="" async defer></script> -->
     <script>
+      const nav = document.getElementById("topNav");
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      };
+
       //this will toggle the nav button open and closed
       const navButton = document.querySelector(
         "button[aria-expanded]"

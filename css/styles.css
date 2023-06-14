@@ -6,12 +6,25 @@
   align-items: center;
   padding-bottom: 20px;
   padding-top: 20px;
+  padding-right: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+  transition: ease-in-out 0.3s;
+}
+
+.navbar.sticky {
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px rgba(48, 63, 100, 0.2);
+  border-radius: 0px 0px 8px 8px;
 }
 
 .navbar-toggler {
   position: absolute;
-  right: 20px;
-  top: 10px;
+  right: 50px;
+  top: 25px;
   outline: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -34,9 +47,10 @@
   display: flex;
   align-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
-.nav-links ul li {
+.nav-links li {
   margin-right: 1rem;
   font-weight: 600;
 }
@@ -79,12 +93,7 @@
 }
 
 .logo-icons {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* width: 480px; */
   width: 455px;
-  /* position: relative; */
-  /* top: -52px; */
 }
 
 .logo-grid {
@@ -100,6 +109,7 @@
   ; */
   /* position: relative; */
 }
+
 /* for this image we are using a grid to size the item. so adding padding to the image itself helped to shrink it down inside its container */
 .icon-item img {
   vertical-align: middle;
@@ -238,7 +248,6 @@
 .banner-one {
   justify-content: space-between;
   align-items: center;
-  /* height: 430px; */
   background-color: #f8fafe;
   padding-bottom: 0px;
   padding-top: 40px;
@@ -247,8 +256,6 @@
 
 .banner-one .container {
   display: flex;
-  /* flex-wrap: wrap;
-  justify-content: space-between; */
   align-items: center;
   padding-right: 0px;
 }
@@ -256,10 +263,6 @@
 .right {
   width: 65%;
   padding-top: 40px;
-  /* width: 500px; */
-  /* position: relative;
-  right: -15px;
-  bottom: -70px; */
 }
 
 .left {
@@ -306,10 +309,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 80%;
-  gap: 0;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px;
+  padding: 50px 0px 10px 0px;
+}
+
+.circles-container > div {
+  display: flex;
+  align-items: center;
 }
 
 .item {
@@ -353,12 +361,32 @@
   background: #c2c3c5;
 }
 
+.circles-information {
+  display: flex;
+  font-size: 24px;
+  gap: 50px;
+  color: var(--black);
+  margin-bottom: 50px;
+}
+
 /* end of circles */
 
-.banner-two .container {
+.video-wrapper {
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.plybtn {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+}
+
+.banner-two .container,
+.video-wrapper {
   background-image: url("/saas-project-assets/banners/banner_two.jpg");
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   display: flex;
 
   flex-wrap: wrap;
@@ -367,7 +395,11 @@
   align-items: center;
 }
 
-.banner-two .container span {
+.video-wrapper {
+  background-image: none;
+}
+.banner-two .container span,
+.plybtn {
   font-size: 80px;
 }
 
@@ -519,6 +551,7 @@
   align-items: center;
   gap: 5px;
   background-color: var(--font-color-link);
+  color: var(--white);
 }
 
 .price-card a span {
@@ -574,12 +607,9 @@
 .hire-us {
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
-  /* min-width: 400px;
-  max-width: 400px; */
 }
 
 .hire-us h3,
@@ -594,7 +624,7 @@
 }
 
 .hire-us h5 {
-  font-size: 14px;
+  font-size: 16px;
   margin: 50px 0px 0px 0px;
 }
 
@@ -652,8 +682,6 @@
   border-radius: 8px;
   margin: 0px 0px 0px 55px;
   padding: 20px 0px 20px 0px;
-  /* min-width: 400px;
-  max-width: 400px; */
 }
 
 form {
@@ -825,7 +853,7 @@ p span i,
   background-color: var(--font-color-base);
 }
 
-/* right now all links showing as visited.... */
+/* right now all links showing as visited, don't understand why.... */
 /* unvisited link */
 /* a:link {
   color: var(--font-color-base);
@@ -848,7 +876,11 @@ p span i,
 
 #scrollUp {
   background-color: transparent;
-  background-image: linear-gradient(90deg, #9ccdfe 0%, #94aafd 100%);
+  background-image: linear-gradient(
+    90deg,
+    #9ccdfe 0%,
+    #94aafd 100%
+  );
   color: var(--white);
   font-size: 20px;
   height: 30px;

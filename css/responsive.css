@@ -1,112 +1,13 @@
 /* media queries need to go in order from smallest to largest */
 /* remember cascading style sheets go from top to bottom, so when working with max-width, you want the bigger sizes on top and the small widths on bottom */
 
-/* reference from codeRad default.css */
-
-/* standard tablet size */
-/* @media (min-width: 768px) {
-  .pricing-table,
-  .testimonial-grid,
-  .footer-bottom-wrapper {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  footer .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-} */
-
-/* reference from responsive.css in codeRad */
-
-/* ipads and tablets - portrait mode, 768px is a common breakpoint*/
-/* we are doing media screen, the shorthand that is just media, will include everything: print and screen */
-
-/* @media screen and (max-width: 768px) { */
-/* we now want to display the  navbar dropdown */
-/* toggling the dropdown menu for the nav */
-/* [aria-controls="navbarDropdown"] {
-    display: block;
-  } */
-
-/* this will take the entire unordered list and hide it */
-/* [aria-expanded="false"] ~ ul {
-    display: none;
-  } */
-
-/* going to need to write a little js to make this work */
-/* [aria-expanded="true"] ~ ul {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: var(--size-50);
-    background-image: linear-gradient(
-      to right,
-      transparent,
-      rgba(255, 255, 255, 0.7)
-    );
-    width: 100%;
-    text-align: right;
-    box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
-  }
-
-  [aria-expanded="true"] ~ ul li a {
-    margin-right: var(--size-20);
-    color: var(--font-color-dark);
-  }
-
-  footer .footer-col:nth-child(3) {
-    grid-column: 1/3;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .hero-wrapper {
-    text-align: center;
-  }
-
-  .why-me-wrapper {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .why-me-wrapper .block-text {
-    padding-right: 0;
-  }
-
-  .why-me-wrapper > div {
-    flex: initial;
-  }
-
-  footer .footer-col:nth-child(3) {
-    grid-column: initial;
-  }
-
-  footer .footer-col:nth-child(1) {
-    order: 3;
-  }
-} */
-
-/* @media screen and (min-width: 360px) {
-  body {
-    background-color: rgb(157, 165, 42);
-    max-width: 767px;
-  }
-} */
-
 /* the pink background is the 1024plus */
+
 /* the 768-1023 is the green */
 @media screen and (max-width: 1024px) {
   body {
-    background-color: rgb(77, 165, 42);
-    min-width: 768px;
+    /* background-color: rgb(77, 165, 42); */
+    min-width: 769px;
   }
 
   header {
@@ -120,13 +21,8 @@
   header .bg {
     height: 600px;
     width: 100%;
-    /* width: 1495px; */
-    /* rotate: 90deg; */
-    /* position: absolute; */
-    /* right: -4px; */
-    /* bottom: -213px; */
     overflow: hidden;
-    border: 2px dashed green;
+    /* border: 2px dashed green; */
     z-index: 1;
     opacity: 36%;
     top: 0px;
@@ -134,8 +30,6 @@
 
   .light-grey {
     background-color: #dfddef;
-    /* width: 1235px;
-    height: 1323px; */
     rotate: 107deg;
     z-index: 4;
     position: absolute;
@@ -155,25 +49,23 @@
   .white {
     position: absolute;
     top: 311px;
-    /* height: 400px;
-  width: 100%; */
     height: 100%;
     width: 2200px;
     z-index: 4;
     background-color: var(--white);
     rotate: 350deg;
-    /* right: -10px; */
   }
 
   .navbar {
     padding-bottom: 20px;
-    /* padding-top: 250px; */
+    padding-top: 20px;
   }
 
   .hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 100px;
   }
 
   .message {
@@ -283,9 +175,16 @@
 
   .right {
     width: 100%;
-    /* position: relative;
-    right: 0px;
-    bottom: -50px; */
+  }
+
+  .banner-two p {
+    font-size: 19px;
+    padding: 0px 40px 20px 40px;
+  }
+
+  .circles-information {
+    font-size: 20px;
+    gap: 30px;
   }
 
   .hubspot .container {
@@ -348,7 +247,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
     padding: 18px;
   }
 
@@ -387,6 +285,16 @@
     margin: 0px;
   }
 
+  .form-item {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .form-item:nth-child(7) {
+    padding-left: 35px;
+  }
   .footer .information {
     flex-wrap: wrap;
     gap: 0px;
@@ -407,30 +315,6 @@
   .copyright p {
     padding: 10px 0px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    background-color: rgb(157, 165, 42);
-    min-width: 360px;
-    /* max-width: 100%; */
-  }
-
-  .features {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-  }
-
-  .benefit-card {
-    text-align: left;
-    width: 100%;
-  }
-
-  .pricing-grid {
-    grid-template-columns: 350px;
-  }
 
   /* we want to display the navbar dropdown */
   [aria-controls="navbarDropdown"] {
@@ -447,25 +331,128 @@
     display: block;
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 70px;
     background-image: linear-gradient(
+      to right,
+      #68adf8,
+      rgba(255, 255, 255)
+    );
+    /* background-image: linear-gradient(
       to right,
       transparent,
       rgba(255, 255, 255, 0.7)
-    );
+    ); */
     width: 100%;
-    text-align: right;
+    /* text-align: right; */
+    text-align: left;
     box-shadow: 0px 0px 20px rgba(52, 49, 75, 0.1);
+    padding: 10px;
   }
 
   [aria-expanded="true"] ~ ul li a {
     margin-right: 20px;
     color: var(--font-color-dark);
   }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    /* background-color: rgb(157, 165, 42); */
+    min-width: 360px;
+    /* max-width: 100%; */
+  }
+
+  .navbar .logo-wrapper {
+    /* margin-right: 65%; */
+    width: 155px;
+  }
+
+  .home-container {
+    min-width: 0px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 50px;
+    padding-top: 100px;
+  }
+
+  .light-grey {
+    rotate: 98deg;
+    left: -1004px;
+    top: -506px;
+  }
+
+  /* make the navlinks manually disappearing until button works */
+  /* .nav-links {
+    display: none;
+  } */
+
+  .message h2 {
+    font-size: 22px;
+  }
+
+  h2 br {
+    display: none;
+  }
+
+  .logo-grid {
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .icon-item img {
+    padding: 8px;
+  }
+
+  /* assigns the grid areas */
+
+  .key-benefits > p {
+    text-align: center;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefit-card {
+    text-align: left;
+    width: 100%;
+  }
+
+  .left h3 {
+    padding: 36px 36px 0px 36px;
+    margin-bottom: 1rem;
+    color: var(--black);
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 350px;
+    grid-gap: 50px;
+  }
 
   .circles-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 20px;
+  }
+
+  .circles-container > .the-circles {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 20px;
+    gap: 14px;
   }
 
   .item::before,
@@ -477,29 +464,169 @@
     display: none;
   }
 
+  .circles-information {
+    font-size: 22px;
+    gap: 35px;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .circles-information div {
+    gap: 45px;
+  }
+
   .banner-two .container {
     height: 100%;
   }
-}
 
-/* @media screen and (min-width: 1024px) {
-  body {
-    background-color: brown;
-    max-width: 2560px;
+  .banner-two h3 {
+    font-size: 30px;
   }
 
-  header {
+  /* .banner-two p {
+    font-size: 19px;
+    padding: 0px 40px 20px 40px;
+  } */
+  .banner-two p {
+    font-size: 18px;
+    padding: 0px;
+  }
+
+  .banner-two p br {
+    display: none;
+  }
+
+  .banner-two .container span,
+  .plybtn {
+    font-size: 40px;
+  }
+
+  .plybtn {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+  }
+
+  /* hire */
+  .hire-one .line {
+    width: 300px;
+  }
+
+  .benefit-card {
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  .hubspot {
+    padding-bottom: 10px;
+  }
+
+  .hubspot .girl {
+    width: 260px;
+  }
+
+  .hubspot .dots {
+    position: absolute;
+    top: 54px;
+    left: 2px;
+    width: 150px;
+    height: 100%;
+  }
+
+  .hubspot .person-info {
+    padding: 120px 10px 10px 10px;
+  }
+
+  /* companies */
+  .company-logos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+  }
+
+  .hire {
+    padding: 20px 15px 20px 15px;
+  }
+
+  .hire-us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .hire-one {
+    text-align: center;
+  }
+
+  .form-item input,
+  .form-item textarea,
+  .form-item select {
+    width: 100%;
+  }
+
+  .form-item {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .form-item:nth-child(6),
+  .form-item:nth-child(7) {
     flex-direction: row;
+    flex-wrap: nowrap;
+    width: 90%;
   }
-} */
 
-/* --------------- */
-/* @media screen and (max-width: 768px) {
+  .form-item span:nth-child(2) {
+    display: none;
+  }
+  .form-item:nth-child(7) {
+    padding-left: 0px;
+  }
 
+  .grid-container {
+    padding: 0px;
+  }
 
+  .grid-item img-wrapper p {
+    width: 90%;
+  }
+
+  .footer .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.brand,
+  .footer .top ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer .information {
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .bottom .footer-nav,
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
-
-@media screen and (max-width: 480px) {
-
-
-} */
