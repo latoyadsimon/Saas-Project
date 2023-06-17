@@ -1,3 +1,6 @@
+
+Notes for self
+
 started this project on 05/29/2023
 
 
@@ -20,3 +23,10 @@ june 11th: clothes shopping with mom and aunts for family reunion trip.
 -days actually spent working on saas: 9 days
 
 06/14/2023- starting project cleanup
+------------------
+06/17/2023
+Cleaning up project after given notes from instructor, j
+deploying on vercel:
+https://saas-project-delta.vercel.app/
+deploying on netlify:
+https://648deb9a11e1f6282d64fbbd--astonishing-seahorse-5a25a1.netlify.app/
