@@ -355,7 +355,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     /* background-color: rgb(157, 165, 42); */
     min-width: 360px;

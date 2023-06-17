@@ -6,7 +6,7 @@
   align-items: center;
   padding-bottom: 20px;
   padding-top: 20px;
-  padding-right: 50px;
+  /* padding-right: 50px; */
   position: fixed;
   top: 0;
   right: 0;
@@ -62,7 +62,7 @@
   justify-content: space-between;
   padding-top: 20px;
   align-items: center;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 
 .message {
@@ -753,7 +753,7 @@ textarea {
 
 .footer .top {
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
+  justify-content: space-around;
   align-items: flex-start;
   gap: 40px;
 }

@@ -51,8 +51,10 @@ body {
   padding: 0;
   /* so we can see what it looks like */
   /* background-color: pink; */
-  max-width: 100vw;
+  width: 100vw;
   height: 100vh;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* box sizing, sets how the total width and height of an element is calculated,
@@ -173,6 +175,7 @@ header .bg {
   z-index: 1;
   opacity: 36%;
   top: 0px;
+  left: 0px;
 }
 
 .light-grey {
