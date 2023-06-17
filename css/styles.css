@@ -853,6 +853,10 @@ p span i,
   background-color: var(--font-color-base);
 }
 
+.active-social a:link {
+  color: var(--font-color-light);
+}
+
 /* right now all links showing as visited, don't understand why.... */
 /* unvisited link */
 /* a:link {
